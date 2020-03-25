@@ -1,0 +1,73 @@
+{
+  "funding_content_object": {
+    "name": "Modified CHADS2 and CHA2DS2-VASc scores to predict atrial fibrillation in acute ischemic stroke patients",
+    "additional_type": "awarded-grant",
+    "subject_of": "2000462473",
+    "language": "en",
+    "creator": "Blue Hedgehogs"
+  },
+  "funding_asset_information": {
+    "prov_attributed_to": "http://vtw.elsevier.com/data/voc/Contributors/Elsevier/GrantWarehouse/funding",
+    "prov_generated_by": "Grant Warehouse Snapshot 28-07-2019",
+    "prov_generated_at_time": "2019-04-01T12:00:00Z",
+    "eaf_referenced_vocabulary": [
+      {
+        "eaf_vocabulary_name": "http://data.elsevier.com/vocabulary/SciValFunders",
+        "enrichment_tool": "9.21"
+      }
+    ],
+    "funding_entities": [
+      {
+        "at_id": "base:a1",
+        "at_type": "eaf:Entity",
+        "eaf_confidence": "1",
+        "fund_identifiers": {
+          "com.elsevier.research.grant.award.FundingIdentifier": {
+            "at_type": "http://data.elsevier.com/vocabulary/FundingIdentifierTypes/FundrefTaxonomyId",
+            "at_value": "http://data.elsevier.com/vocabulary/SciValFunders/100000050"
+          }
+        },
+        "fund_inferred_name": {
+          "string": "National Heart, Lung, and Blood Institute"
+        },
+        "fund_inferred_acronym": {
+          "array": [
+            "NHLBI"
+          ]
+        },
+        "fund_name": "National Heart, Lung, and Blood Institute",
+        "fund_type": "http://schema.graph.elsevier.com/research/Organization",
+        "fund_country": {
+          "string": "http://sws.geonames.org/6252001/"
+        },
+        "fund_role": {
+          "array": [
+            "http://data.elsevier.com/vocabulary/FundingEntityRoles/GrantSponsor"
+          ]
+        }
+      },
+      {
+        "at_id": "base:a2",
+        "at_type": "eaf:Entity",
+        "eaf_confidence": "1",
+        "fund_identifiers": null,
+        "fund_inferred_name": null,
+        "fund_inferred_acronym": null,
+        "fund_name": "2T32HL007182-16",
+        "fund_type": "http://schema.graph.elsevier.com/research/GrantAward",
+        "fund_country": null,
+        "fund_role": null
+      }
+    ],
+    "fund_relations": [
+      {
+        "at_id": "base:a3",
+        "at_type": "eaf:Relation",
+        "rdf_subject": "base:a1",
+        "rdf_object": "base:a2",
+        "rdf_predicate": "http://schema.graph.elsevier.com/research/funds",
+        "eaf_confidence": "1"
+      }
+    ]
+  }
+}
