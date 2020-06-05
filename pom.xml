@@ -8,11 +8,18 @@
   <artifactId>jsonifiable-avro</artifactId>
   <version>1.0-SNAPSHOT</version>
 
+
+  <parent>
+    <groupId>com.elsevier.dp</groupId>
+    <artifactId>mvn-parent-pom</artifactId>
+    <version>0.1.0</version>
+  </parent>
+
   <properties>
     <java.version>11</java.version>
 
     <avro.version>1.9.1</avro.version>
-    <dp-grant-award-kafka-schema.version>1.0.1-SNAPSHOT</dp-grant-award-kafka-schema.version>
+    <dp-grant-award-kafka-schema.version>2.0-SNAPSHOT</dp-grant-award-kafka-schema.version>
     <java-test-support.version>1.0-SNAPSHOT</java-test-support.version>
     <jackson-databind.version>2.10.3</jackson-databind.version>
     <jsonassert.version>1.5.0</jsonassert.version>
@@ -60,8 +67,8 @@
       <groupId>com.elsevier.research.kafka.schema</groupId>
       <artifactId>dp-grant-award-kafka-schema</artifactId>
       <version>${dp-grant-award-kafka-schema.version}</version>
-      <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>

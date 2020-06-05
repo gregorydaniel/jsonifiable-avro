@@ -2,7 +2,6 @@ package com.elsevier.avro.json;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.elsevier.avro.json.utils.GrantAwardUtils;
 import com.elsevier.research.grant.award.GrantAwardFundedItem;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -10,11 +9,13 @@ import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Test;
 import org.skyscreamer.jsonassert.JSONAssert;
 
+import com.elsevier.research.grant.award.util.ExampleGrantAwardMessage;
+
 class JsonifiableTest {
 
   @Test
   void testRoundRobin() throws Exception {
-    GrantAwardFundedItem grantAwardFundedItem = GrantAwardUtils.getGrantAwardFundedItem();
+    GrantAwardFundedItem grantAwardFundedItem = ExampleGrantAwardMessage.newInstance();
     String actualJson = JsonifiableAvro.toJson(grantAwardFundedItem);
 
     String expectedJsonString = readFileToString("/grant-award.json");

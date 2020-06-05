@@ -20,7 +20,7 @@ public class JsonifiableAvro {
 
   public static <T extends SpecificRecordBase> T fromJson(String json, Schema schema) {
     try {
-      return convertToJson(json, schema);
+      return convertFromJson(json, schema);
     } catch (IOException e) {
       throw new RuntimeException("Unable to convert from JSON.", e);
     }
@@ -34,7 +34,7 @@ public class JsonifiableAvro {
     }
   }
 
-  private static <T extends SpecificRecordBase> T convertToJson(String json, Schema schema)
+  private static <T extends SpecificRecordBase> T convertFromJson(String json, Schema schema)
       throws IOException {
     InputStream input = new ByteArrayInputStream(json.getBytes());
     DataInputStream din = new DataInputStream(input);
