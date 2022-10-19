@@ -21,7 +21,7 @@
     <avro.version>1.9.1</avro.version>
     <dp-grant-award-kafka-schema.version>2.0-SNAPSHOT</dp-grant-award-kafka-schema.version>
     <java-test-support.version>1.0-SNAPSHOT</java-test-support.version>
-    <jackson-databind.version>2.10.3</jackson-databind.version>
+    <jackson-databind.version>2.13.4.1</jackson-databind.version>
     <jsonassert.version>1.5.0</jsonassert.version>
     <commons-io.version>2.6</commons-io.version>
   </properties>
